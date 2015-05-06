@@ -1,8 +1,61 @@
+$font: $helvetica
+$text-color: #525252
+$bottom-color: #E87461
+$about-color: tint($text-color, 50%)
+$logo1-color: #75CCB1
+$logo2-color: #E87461
+
+.logo
+	font-family: $font
+	font-size: 30px
+	padding: 1em 0 0 1em
+	margin: 1em 0 0 1em
+	color: $logo1-color
+	.logo1
+		font-weight: bold
+	.logo2 
+		color: $logo2-color
+		font-weight: lighter
+
+
+body
+	font-family: $font
+	// background-image: url('css/3-layouts/noisy.png')
+
+h1
+	text-align: center
+	font-size: 3em	
+	color: $text-color
+	padding: 80px 0 100px 0
+
 .box
-  background: pink
-  +size(100px)
-  margin: 20px
-  +position(absolute, 100px auto auto 200px)
+	background: tint(red, 50%)
+	margin: 0px
+	+size(100px)
+	float: left
+	+span-columns(3)
+	+outer-container
 
 p
-  font-family: $helvetica
+	+outer-container
+	+position(center, auto auto auto auto)
+
+
+.bottom
+	background: $bottom-color
+	width: 100%
+	position: absolute
+	bottom: 0
+	left: 0
+	color: $text-color
+	.content
+		text-align: right
+		padding: 1em 1em 1em 1em
+		.bottom-tagline1
+			font-family: $font
+			color: white
+		.bottom-tagline2
+			font-family: $font
+			font-weight: lighter
+			color: white
+			letter-spacing: 0.04em
