@@ -5,11 +5,15 @@ $about-color: tint($text-color, 50%)
 $logo1-color: #75CCB1
 $logo2-color: #E87461
 
+
+body
+	font-family: $font
+
 .logo
 	font-family: $font
 	font-size: 30px
-	padding: 1em 0 0 1em
-	margin: 1em 0 0 1em
+	padding: 0.5em 0 0 0.5em
+	margin: 0.5em 0 0 0.5em
 	color: $logo1-color
 	.logo1
 		font-weight: bold
@@ -17,10 +21,15 @@ $logo2-color: #E87461
 		color: $logo2-color
 		font-weight: lighter
 
-
-body
+.about
 	font-family: $font
-	// background-image: url('css/3-layouts/noisy.png')
+	float: right
+	margin-right: 40px
+	color: tint($text-color, 60%)
+	font-size: 0.6em
+	line-height: 1.5em
+	padding-top: 5px
+
 
 h1
 	text-align: center

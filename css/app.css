@@ -5,11 +5,14 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
 .logo {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 30px;
-  padding: 1em 0 0 1em;
-  margin: 1em 0 0 1em;
+  padding: 0.5em 0 0 0.5em;
+  margin: 0.5em 0 0 0.5em;
   color: #75CCB1; }
   .logo .logo1 {
     font-weight: bold; }
@@ -17,8 +20,14 @@ html {
     color: #E87461;
     font-weight: lighter; }
 
-body {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+.about {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  float: right;
+  margin-right: 40px;
+  color: #b9b9b9;
+  font-size: 0.6em;
+  line-height: 1.5em;
+  padding-top: 5px; }
 
 h1 {
   text-align: center;
@@ -258,5 +267,21 @@ p {
 
 button {
   text-align: center; }
+
+.texture {
+  height: 5em;
+  width: 100%;
+  margin: 0 0 0 0; }
+  .texture .texture-normal {
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/concrete_wall_2.png"), -webkit-linear-gradient(180deg, white, white), center repeat repeat white scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/concrete_wall_2.png"), linear-gradient(180deg, white, white), center repeat repeat white scroll;
+    float: left;
+    width: 100%; }
+  .texture .texture-inverted {
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), -webkit-linear-gradient(180deg, white, white), center repeat repeat white scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, white, white), center repeat repeat white scroll;
+    float: left;
+    height: 5em;
+    width: 50%; }
 
 /*# sourceMappingURL=app.css.map */
