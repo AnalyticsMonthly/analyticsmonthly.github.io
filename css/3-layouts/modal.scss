@@ -44,7 +44,7 @@
   .modal-fade-screen { // overlay
     @include transition(opacity 0.25s ease);
     @include position(fixed, 0px 0px 0px 0px);
-    background: rgba(0,0,0, 0.85);
+    background: rgba(0,0,0, 0.60);
     opacity: 0;
     padding-top: 0.6em;
     text-align: left;
@@ -129,9 +129,9 @@
     .modal-content {
       color: $base-font-color;
 
-      @include media($medium-screen) {
-        @include columns(2 8em);
-      }
+      // @include media($medium-screen) {
+      //   @include columns(2 8em);
+      // }
     }
 
     a.cta {

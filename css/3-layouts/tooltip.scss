@@ -12,14 +12,7 @@
   $tooltip-distance-from-item: 3em;
   $tooltip-arrow-distance-from-box: -1.3em;
 
-  background: $tooltip-background;
-  border-radius: $base-border-radius;
-  border: 1px solid $base-border-color;
-  display: inline-block;
-  padding: 0.5em 1em;
-  margin: 0 1em;
-  position: absolute;
-  text-align: center;
+  width: auto; 
 
   &:focus,
   &:hover .tooltip {

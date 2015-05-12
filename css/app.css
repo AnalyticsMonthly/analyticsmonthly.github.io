@@ -6,14 +6,15 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  height: 100%; }
 
 .logo {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 30px;
   padding: 0.5em 0 0 0.5em;
   margin: 0.5em 0 0 0.5em;
-  color: #75CCB1; }
+  color: #717EC3; }
   .logo .logo1 {
     font-weight: bold; }
   .logo .logo2 {
@@ -89,14 +90,7 @@ p {
       letter-spacing: 0.04em; }
 
 .tooltip-item {
-  background: white;
-  border-radius: 3px;
-  border: 1px solid gainsboro;
-  display: inline-block;
-  padding: 0.5em 1em;
-  margin: 0 1em;
-  position: absolute;
-  text-align: center; }
+  width: auto; }
   .tooltip-item:focus, .tooltip-item:hover .tooltip {
     opacity: 1;
     visibility: visible; }
@@ -162,7 +156,7 @@ p {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   padding-top: 0.6em;
   text-align: left;
@@ -244,11 +238,6 @@ p {
     font-weight: 800; }
   .modal .modal-inner .modal-content {
     color: #333; }
-    @media screen and (min-width: 40em) {
-      .modal .modal-inner .modal-content {
-        -webkit-columns: 2 8em;
-        -moz-columns: 2 8em;
-        columns: 2 8em; } }
   .modal .modal-inner a.cta {
     color: white;
     display: inline-block;
@@ -273,15 +262,40 @@ button {
   width: 100%;
   margin: 0 0 0 0; }
   .texture .texture-normal {
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/concrete_wall_2.png"), -webkit-linear-gradient(180deg, white, white), center repeat repeat white scroll;
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/concrete_wall_2.png"), linear-gradient(180deg, white, white), center repeat repeat white scroll;
     float: left;
     width: 100%; }
   .texture .texture-inverted {
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), -webkit-linear-gradient(180deg, white, white), center repeat repeat white scroll;
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, white, white), center repeat repeat white scroll;
     float: left;
     height: 5em;
     width: 50%; }
+
+.progress-bar-indication {
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  border: 1px solid gainsboro;
+  box-shadow: inset 0 0 3px 0 rgba(115, 115, 115, 0.15);
+  margin: 0 auto;
+  width: 100%; }
+  .progress-bar-indication > span.meter {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #477DCA;
+    background-repeat: repeat-x;
+    background-size: 40px 40px;
+    border-bottom-right-radius: 0;
+    border-radius: 2px;
+    border-top-right-radius: 0;
+    border: 1px solid #2c5999;
+    display: block;
+    height: 100%;
+    width: 60%; }
+  .progress-bar-indication p {
+    color: white;
+    font-weight: 800;
+    line-height: 1.5em;
+    margin: 0;
+    padding: .1em .5em;
+    text-shadow: 0 0 1px black; }
 
 /*# sourceMappingURL=app.css.map */
