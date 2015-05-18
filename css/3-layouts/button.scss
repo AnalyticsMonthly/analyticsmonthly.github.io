@@ -1,0 +1,159 @@
+/* Button container */
+
+.box {
+	width: 405px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+
+.progress-button {
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+/* Button style */
+.progress-button button {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 150px;
+	height: 70px;
+	border: 2px solid #75CCB1;
+	border-radius: 40px;
+	background: transparent;
+	color: #75CCB1;
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+	transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+}
+
+.progress-button button:hover {
+	background-color: #75CCB1;
+	color: #fff;
+}
+
+.progress-button button:focus {
+	outline: none;
+}
+
+/* Text (transition for when returning to initial state) */
+.progress-button button span {
+	-webkit-transition: opacity 0.3s 0.1s;
+	transition: opacity 0.3s 0.1s;
+}
+
+/* Common style of SVGs */
+.progress-button svg {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+
+.progress-button svg path {
+	opacity: 0;
+	fill: none;
+}
+
+.progress-button svg.progress-circle path {
+	stroke: #75CCB1;
+	stroke-width: 5;
+}
+
+.progress-button svg.checkmark path,
+.progress-button svg.cross path {
+	stroke: #fff;
+	stroke-linecap: round;
+	stroke-width: 4;
+	-webkit-transition: opacity 0.1s;
+	transition: opacity 0.1s;
+}
+
+/* Loading, success and error effects */
+.loading.progress-button button {
+	width: 70px; /* make a circle */
+	border-width: 5px;
+	border-color: #ddd;
+	background-color: transparent;
+	color: #fff;
+}
+
+.loading.progress-button span {
+	-webkit-transition: opacity 0.15s;
+	transition: opacity 0.15s;
+}
+
+.loading.progress-button span,
+.success.progress-button span,
+.error.progress-button span {
+	opacity: 0; /* keep it hidden in all states */
+}
+
+.success.progress-button button,
+.error.progress-button button {
+	-webkit-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+	transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+}
+
+.success.progress-button button {
+	border-color: #75CCB1;
+	background-color: #75CCB1;
+}
+
+.error.progress-button button {
+	border-color: #E87461;
+	background-color: #E87461;
+}
+
+.loading.progress-button svg.progress-circle path,
+.success.progress-button svg.checkmark path,
+.error.progress-button svg.cross path {
+	opacity: 1;
+	-webkit-transition: stroke-dashoffset 0.3s;
+	transition: stroke-dashoffset 0.3s;
+}
+
+/* Optional elastic effect for the width of the button */
+.elastic.progress-button button {
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1), border-width 0.3s, border-color 0.3s;
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1.6), border-width 0.3s, border-color 0.3s;
+	transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1.6), border-width 0.3s, border-color 0.3s;
+}
+
+.loading.elastic.progress-button button {
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, 0, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, -0.6, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+	transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, -0.6, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+}
+
+// EMAIL FIELD
+
+.main_field {
+	height: 66px;
+	min-width: 250px;
+	margin: 0 auto;
+	display: inline-block;
+	border: 2px solid #75CCB1;
+	border-radius: 40px;
+	background-color: rgba(255,255,255,0.25);
+	padding-left: 40px;
+}
+
+.main_field:focus {
+	border: none;
+}
+
+
+// FORM
+
+form {
+	width: auto;
+	margin: 0 auto;
+}
