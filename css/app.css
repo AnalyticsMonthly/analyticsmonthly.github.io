@@ -14,7 +14,7 @@ body {
   font-size: 30px;
   padding: 0.5em 0 0 0.5em;
   margin: 0.5em 0 0 0.5em;
-  color: #717EC3; }
+  color: #80BCA3; }
   .logo .logo1 {
     font-weight: bold; }
   .logo .logo2 {
@@ -262,9 +262,13 @@ button {
   width: 100%;
   margin: 0 0 0 0; }
   .texture .texture-normal {
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/concrete_wall_2.png"), -webkit-linear-gradient(180deg, white, white), center repeat repeat white scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/concrete_wall_2.png"), linear-gradient(180deg, white, white), center repeat repeat white scroll;
     float: left;
     width: 100%; }
   .texture .texture-inverted {
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), -webkit-linear-gradient(180deg, white, white), center repeat repeat white scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, white, white), center repeat repeat white scroll;
     float: left;
     height: 5em;
     width: 50%; }
